@@ -61,13 +61,15 @@ const interactFunctions = {
         alert("Non mangiare dove si copia!");
     },
     chartButton: function () {
-        window.open("https://www.dextools.io/app/uniswap/pair-explorer/0x465d676bc576eac77f3a69c5454a84294cea5092");
+        // window.open("https://www.dextools.io/app/uniswap/pair-explorer/0x465d676bc576eac77f3a69c5454a84294cea5092");
+        alert("Coming soon!");
     },
     getCoinButton: function () {
-        window.open("https://app.uniswap.org/#/swap?outputCurrency=0x76851a93977bea9264c32255b6457882035c7501&use=V2");
+        // window.open("https://app.uniswap.org/#/swap?outputCurrency=0x76851a93977bea9264c32255b6457882035c7501&use=V2");
+        alert("Coming soon!");
     },
     getNFTButton: function () {
-        window.open("https://opensea.io/");
+        // window.open("https://opensea.io/");
     },
     etherescanButton: function () {
         window.open("https://etherscan.io/address/0x08b088e282cDF720796809514F5E07096c5A8c6f");
@@ -103,9 +105,9 @@ for (const button in getCoinButtons) {
     getCoinButtons.item(button).addEventListener("mousedown", interactFunctions.getCoinButton);
 }
 
-for (const button in getNFTButtons) {
-    getNFTButtons.item(button).addEventListener("mousedown", interactFunctions.getNFTButton);
-}
+// for (const button in getNFTButtons) {
+//     getNFTButtons.item(button).addEventListener("mousedown", interactFunctions.getNFTButton);
+// }
 
 for (const button in etherescanButtons) {
     etherescanButtons.item(button).addEventListener("mousedown", interactFunctions.etherescanButton);
