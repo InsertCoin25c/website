@@ -17,34 +17,34 @@ const getCoinButtons = document.getElementsByClassName("openGetCoinButton");
 const getNFTButtons = document.getElementsByClassName("openGetNFT");
 const etherescanButtons = document.getElementsByClassName("openEtherScan");
 const interactFunctions = {
-    // zoomCabin: function () {
-    //     cabin.classList.add("arcade-machine-zoom");
-    //     insertButton.classList.add("insertButton-zoom");
-    //     setTimeout(function(){
-    //         cabin.style.display = "none";
-    //         realSite.style.display = "unset";
-    //         realSite.classList.add("real-site-zoom");
-    //         cabin.classList.remove("arcade-machine-zoom");
-    //         insertButton.classList.remove("insertButton-zoom");
-    //     }, 1000);
+    zoomCabin: function () {
+        // cabin.classList.add("arcade-machine-zoom");
+        // insertButton.classList.add("insertButton-zoom");
+        // setTimeout(function(){
+        //     cabin.style.display = "none";
+        //     realSite.style.display = "unset";
+        //     realSite.classList.add("real-site-zoom");
+        //     cabin.classList.remove("arcade-machine-zoom");
+        //     insertButton.classList.remove("insertButton-zoom");
+        // }, 1000);
 
-    // },
-    // homeButton: function () {
-    //     realSite.classList.add("dissolve-real-site");
-    //     setTimeout(function(){
-    //         realSite.classList.remove("real-site-zoom");
-    //         realSite.style.display = "none";
-    //         realSite.classList.remove("dissolve-real-site");
-    //         cabin.style.opacity = "0";
-    //         cabin.style.display = "unset";
-    //         cabin.classList.add("return-cabin");
-    //         setTimeout(function(){
-    //             cabin.style.opacity = "1";
-    //             cabin.classList.remove("return-cabin");
-    //         }, 1000);
-    //     }, 250);
+    },
+    homeButton: function () {
+        // realSite.classList.add("dissolve-real-site");
+        // setTimeout(function(){
+        //     realSite.classList.remove("real-site-zoom");
+        //     realSite.style.display = "none";
+        //     realSite.classList.remove("dissolve-real-site");
+        //     cabin.style.opacity = "0";
+        //     cabin.style.display = "unset";
+        //     cabin.classList.add("return-cabin");
+        //     setTimeout(function(){
+        //         cabin.style.opacity = "1";
+        //         cabin.classList.remove("return-cabin");
+        //     }, 1000);
+        // }, 250);
 
-    // },
+    },
     discordButton: function () {
         window.open("https://discord.gg/nUSSPNMfZ2");
     },
@@ -72,8 +72,7 @@ const interactFunctions = {
         // window.open("https://opensea.io/");
     },
     etherescanButton: function () {
-        // window.open("https://etherscan.io/address/0x08b088e282cDF720796809514F5E07096c5A8c6f");
-        alert("Coming soon!");
+        window.open("https://etherscan.io/address/0x08b088e282cDF720796809514F5E07096c5A8c6f");
     }
 }
 // insertButton.addEventListener("mousedown", interactFunctions.zoomCabin);
@@ -141,3 +140,28 @@ clipboard.on('error', function(e) {
 // for (const button in twitterButtonsBig) {
 //     twitterButtonsBig.item(button).addEventListener("mousedown", interactFunctions.twitterButton);
 // }
+
+try {
+    let countdown = document.getElementById("dateCountdown");
+
+    let countDownDate = new Date("Oct 31, 2021 22:00:00").getTime();
+    let x = setInterval(function() {
+        let now = new Date().getTime();
+        let distance = countDownDate - now;
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        countdown.innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            countdown.innerHTML = "EXPIRED";
+        }
+    }, 1000);
+} catch (e) {
+}
