@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/" /> -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <!-- <meta name="theme-color" content="#000000" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/style.css">
+    <!-- <link rel="stylesheet" href="%PUBLIC_URL%/config/theme.css" /> -->
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Insert Coin</title>
+    
+    <!-- <meta name="description" content="Mint your Ghost NFT" /> -->
+  </head>
+  <body>
+    <div>
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <div id='stars4'></div>
+      <div id='stars5'></div>
+      <div id='stars6'></div>
+    </div>
+    <div class="content-container">
+      <header>
+        <div style="width: 100%; height: 60px; display: flex; justify-content: space-between; align-items: center;">
+          <img src="assets/logo_black_wr.svg" alt="" style="width: 40px;">
+          <div class="header-shortcuts" >
+<!--            <div class="dropdown no-ic-links">-->
+<!--              <a class="dropButton-empty homeButton">HOME</a>-->
+<!--            </div>-->
+            <div class="dropdown no-ic-links">
+              <a class="dropButton-empty" href="#token">TOKEN</a>
+            </div>
+            <div class="dropdown no-ic-links">
+              <a class="dropButton-empty" href="#nft">NFT</a>
+            </div>
+            <div class="dropdown no-ic-links">
+              <a class="dropButton-empty" href="#faq">FAQS</a>
+            </div>
+            <div class="dropdown no-ic-links">
+              <a class="dropButton-empty" href="#roadmap">ROADMAP</a>
+            </div>
+            <div class="dropdown no-ic-links">
+              <a class="dropButton-empty" href="#howTo">HOW TO</a>
+            </div>
+            <div class="dropdown ic-links">
+              <a class="dropButton">LINKS</a>
+              <div class="dropdown-content">
+                <a href="https://uniswap.org/" target="_blank">Pair Uniswap</a>
+                <a href="https://www.coingecko.com/it" target="_blank">Info CoinGeko</a>
+                <a href="https://coinmarketcap.com/it/" target="_blank">Info Coin Market Cap</a>
+                <a href="https://etherscan.io/" target="_blank">Etherscan</a>
+                <a href="https://github.com/InsertCoin25c" target="_blank">GitHub</a>
+                <a href="https://t.me/InsertCoin25c" target="_blank">Telegram</a>
+                <a href="https://discord.gg/nUSSPNMfZ2" target="_blank">Discord</a>
+                <a href="https://twitter.com/InsertCoin25C" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/insertcoin25c_official/" target="_blank">Instagram</a>
+              </div>
+            </div>
+            <!-- <div class="dropdown no-ic-links">
+              <a class="dropButton-empty-wback" href="https://app.uniswap.org/#/swap?outputCurrency=0x76851a93977bea9264c32255b6457882035c7501&use=V2" target="_blank">GET $25C</a>
+            </div> -->
+          </div>
+        </div>
+      </header>
+      <br>    
+      <div id="token" class="ic-section ic-section-token">
+        <div class="ic-section-token-text">
+          <h2 class="subtitle style3">A Token made by gamers for gamers</h2>
+          <h1 class="style3 highlight">$25C</h1>
+          <h1 class="style3">Insert Coin</h1>
+          <p class="style3 paragraph" style="margin-bottom: 30px;">
+            InsertCoin is an open source peer-to-peer digital currency created by gamers for gamers. Aiming to become the premier trading asset in the near future of gaming on blockchain, InsertCoin will make every gamer's dream come true.
+          </p>
+          <p class="style3 ic-section-token-buttons">
+            <button class="simpleButton openGetCoinButton">GET $25C</button>
+            <button class="simpleButton openChartButton">CHART</button>
+          </p>
+          <p class="style3 ic-section-token-buttons">
+            <button class="telegramButton">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Telegram</title><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            </button>
+            <button class="twitterButton">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            </button>
+            <button class="discordButton">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+            </button>
+            <button class="instagramButton">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+            </button>
+          </p>
+        </div>
+        <div class="ic-section-token-image">
+          <img src="assets/logo_black_wr.svg" alt="" style="width: 80%;">
+        </div>
+      </div>
+
+
+      <div class="ic-section ic-section-3columns">
+        <div class="ic-section-3columns-single">
+          <h2 class="style3 highlight">
+            Automated Rewards
+          </h2>
+          <p class="style3">
+            Every sell transaction incurs a 2% redistribution fee, this is then distributed to every wallet holder (excludes CEX wallets).
+          </p>
+        </div>
+        <div class="ic-section-3columns-single">
+          <h2 class="style3 highlight">
+            Gamers Community
+          </h2>
+          <p class="style3">
+            Our community is coming together for the greater good and a better gaming services on blockchain. We will be leveraging our partnerships and creating new ways to synergize games and blockchain with a true utility token.
+          </p>
+        </div>
+        <div class="ic-section-3columns-single">
+          <h2 class="style3 highlight">
+            Safe
+          </h2>
+          <p class="style3">
+            The $25C smart contract has been published, verified on Etherscan and available on GitHub. That means everyone can audit it and minimize risk to our users and community from potential bad actors.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="ic-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+        <h1 class="style3">
+          Tokenomics
+        </h1>
+        <div class="ic-section-tokenomics-spec">
+          <div class="ic-section-tokenomics-spec-single">
+            <h2 class="style3 highlight">
+              Token Symbol
+            </h2>
+            <p class="style3">
+              $25C
+            </p>
+          </div>
+          <div class="ic-section-tokenomics-spec-single">
+            <h2 class="style3 highlight">
+              Total supply
+            </h2>
+            <p class="style3">
+              1,000,000,000,000,000
+            </p>
+          </div>
+          <div class="ic-section-tokenomics-spec-single">
+            <h2 class="style3 highlight">
+              Automated Rewards
+            </h2>
+            <p class="style3">
+              2% on each sale
+            </p>
+          </div>
+        </div>
+        <div style="width: 80%">
+          <!-- <script src="libs/coingecko-coin-ticker-widget.js"></script>
+          <coingecko-coin-ticker-widget  coin-id="ethereum" currency="usd" locale="en"></coingecko-coin-ticker-widget> -->
+        </div>
+        <!--        <div style="width: 80%">-->
+        <!--          <script src="libs/coingecko-coin-compare-chart-widget.js"></script>-->
+        <!--          <coingecko-coin-compare-chart-widget  coin-ids="ethereum" currency="usd" locale="en"></coingecko-coin-compare-chart-widget>-->
+        <!--        </div>-->
+      </div>
+
+      <div id="faq" class="ic-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+        <h1 class="style3" style="text-align: center;">
+          Frequently Asked Questions
+        </h1>
+        <div class="ic-section-faq-row">
+          <div class="ic-section-faq-row-col">
+            <div class="faq">
+              <h2>ETH or BSC?</h2>
+              <p class="faqAnswer" style="">
+                We are on the Ethereum chain.
+              </p>
+            </div>
+            <div class="faq">
+              <h2>Where can I view the chart?</h2>
+              <p class="faqAnswer" style="">
+                <!-- The chart can be viewed <a href="https://www.dextools.io/app/uniswap/pair-explorer/0x465d676bc576eac77f3a69c5454a84294cea5092" target="_blank" style="text-decoration: none; color: #FFFFFF">here</a>. -->
+                The chart will be available soon.
+              </p>
+            </div>
+            <div class="faq">
+              <h2>What is the market cap?</h2>
+              <p class="faqAnswer" style="">
+                The market cap can be found on the dextools chart link.
+              </p>
+            </div>
+            <div class="faq">
+              <h2>Was there a presale?</h2>
+              <p class="faqAnswer" style="">
+                Yes there was a presale for 8 ETH initial liquidity. Presalers got tokens at a 5 times HIGHER price than on listing though.
+              </p>
+            </div>
+          </div>
+          <div class="ic-section-faq-row-col">
+            <div class="faq">
+              <h2>Who is the team & dev?</h2>
+              <p class="faqAnswer" style="">
+                The team and dev are Anon.
+              </p>
+            </div>
+            <div class="faq">
+              <h2>Where can I buy $25C?</h2>
+              <p class="faqAnswer" style="">
+                You can buy $25C on Uniswap. Use the contract address to find it 0x76851a93977bea9264c32255b6457882035c7501.
+              </p>
+            </div>
+            <div class="faq">
+              <h2>What slippage should I use?</h2>
+              <p class="faqAnswer" style="">
+                Slippage should be set between 3-6%.
+              </p>
+            </div>
+            <div class="faq">
+              <h2>How does the 2% work?</h2>
+              <p class="faqAnswer" style="">
+                The redistribution works like this: everytime someone buys or sells the token, 2% of that are taken away from the buyers and given to all hodlers (those who hold a lot will receive more).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="nft" class="ic-section" style="display: flex; flex-direction: column;">
+        <div class="ic-section-nft">
+          <div class="ic-section-nft-text">
+            <h2 class="subtitle style3">Welcome to</h2>
+            <h1 class="style3 highlight">The Little Ghost House</h1>
+            <h2 class="style3">An Awesome NFT Collection</h2>
+            <p class="style3 paragraph" style="margin-bottom: 30px;">
+              Located in a really top-secret location, this house is open exclusively for the cool members of the Insert Coin Community.
+              <br>
+              Each Little Ghost is unique and programmatically generated from many possible traits, including clothing, eyes, tool, coolness and more.
+              <br>
+              Hosted on the Ethereum blockchain.
+            </p>
+            <!-- <p class="style3 ic-section-nft-buttons">
+              <button class="simpleButton openGetNFT">GET NFT</button>
+            </p> -->
+          </div>
+          <div class="ic-section-nft-image">
+            <img src="assets/Ghost_Small.gif" alt="" style="width: 70%;">
+          </div>
+        </div>
+        <div id="root" class="style3 highlight"></div>
+      </div>
+
+
+
+      <div id="roadmap" class="ic-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+        <h1 class="style3">
+          Roadmap
+        </h1>
+        <div class="ic-section-roadmap">
+          <div class="ic-section-roadmap-single">
+            <h2 class="style3 highlight">
+              Phase 1
+            </h2>
+            <div class="reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">Launch Token Website</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">Being Marketing on Social Media</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">Launch NFT Collectibles</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">5000+ Telegram Members</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">5000+ Twitter Community</p>
+            </div>
+          </div>
+          <div class="ic-section-roadmap-single">
+            <h2 class="style3 highlight">
+              Phase 2
+            </h2>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">Listing on UniSwap</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">Listing on CoinGeko</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">Listing on CMC</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">Influencer Marketing Push</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">15000+ Telegram Members</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">15000+ Twitter Community</p>
+            </div>
+          </div>
+          <div class="ic-section-roadmap-single">
+            <h2 class="style3 highlight">
+              Phase 3
+            </h2>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">Strategic Partnership</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">Mainstream Marketing</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">Partnership with effective social media platforms</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">Full Audit</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">50000+ Telegram Members</p>
+            </div>
+            <div class="not-reached-milestone">
+              <p><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg></p>
+              <p class="style3">50000+ Twitter Community</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="howTo" class="ic-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+        <h1 class="style3">
+          HOW TO BUY $25C
+        </h1>
+        <div class="ic-section-howto">
+          <div class="steps-how-to">
+            <h2 class="style3 highlight">
+              <b>Step 1</b>
+            </h2>
+            <img src="assets/metamask-fox.svg" alt="">
+            <h1 class="style3">
+              <b>Create MetaMask Wallet</b>
+            </h1>
+            <p class="style3" >
+              Create a MetaMask Wallet using either a desktop computer or an iOS/Android mobile device. That will allow you to buy, sell, send, and receive $25C.
+            </p>
+          </div>
+          <div class="steps-how-to">
+            <h2 class="style3 highlight">
+              <b>Step 2</b>
+            </h2>
+            <img src="assets/ethereum-eth.svg" alt="">
+            <h1 class="style3">
+              <b>Send $ETH to MetaMask</b>
+            </h1>
+            <p class="style3" >
+              Transfer $ETH to your new MetaMask wallet from your existing wallet (e.g. Trust Wallet, Coinbase, or Binance), or buy $ETH directly within MetaMask.
+            </p>
+          </div>
+        </div>
+        <div class="ic-section-howto">
+          <div class="steps-how-to">
+            <h2 class="style3 highlight">
+              <b>Step 3</b>
+            </h2>
+            <img src="assets/Uniswap_Logo.svg" alt="">
+            <h1 class="style3">
+              <b>Connect To UniSwap</b>
+            </h1>
+            <p class="style3" >
+              <!-- The safest place to buy $25C is on <a href="https://app.uniswap.org/#/swap?outputCurrency=0x76851a93977bea9264c32255b6457882035c7501&amp;use=V2" target="_blank" style="text-decoration: none;color: #F2CF5D;">UniSwap</a>. Visit UniSwap and click “connect wallet” MetaMask will ask for your signature, go ahead and sign it. -->
+              The safest place to buy $25C will be UniSwap soon. Visit UniSwap and click “connect wallet” MetaMask will ask for your signature, go ahead and sign it.
+            </p>
+          </div>
+          <div class="steps-how-to">
+            <h2 class="style3 highlight">
+              <b>Step 4</b>
+            </h2>
+            <img src="assets/logo_black_wr.svg" alt="">
+            <h1 class="style3">
+              <b>Swap $ETH For $25C</b>
+            </h1>
+            <p class="style3" >
+              Set your slippage to 3-6% and enter and the amount of $ETH you would like to swap for $25C. Your $25C will now be in your MetaMask wallet.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ic-section ic-section-donation">
+        <div class="ic-section-donation-desc">
+          <h1 class="style3">Feel like donating</h1>
+          <p class="style3 paragraph">
+            As a community-powered project, Insert Coin runs thanks to its amazing volunteers and generous donors. If you would like to pitch in, use the official ERC20 donation wallet here:
+          </p>
+          <div class="ic-section-donation-desc-sub">
+            <p class="style3" style="text-align: center; word-break: break-word; margin-right: 20px;">
+              0xcB00ed46D3e84f144d067eaaFf36c3C064138EC3
+            </p>
+            <button id="copyButton" class="copyButton">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+            </button>
+          </div>
+          <p class="style3" style="margin-top: 2rem;">
+            <b>Accepted:</b> Any ERC20 token
+          </p>
+          <p class="style3" style="">
+            <b>Preferred:</b> $ETH, $USDC, $25C
+          </p>
+          <p class="style3 ic-section-donation-desc-sub">
+            <button class="simpleButton openEtherScan">Etherscan</button>
+          </p>
+        </div>
+        <div class="ic-section-donation-qr">
+          <img src="assets/QRCode.png" alt="" style="width: 70%;">
+        </div>
+      </div>
+
+      <!--      <div style="margin: 3rem 0 1rem 0; display: flex; flex-direction: row; align-items: center; justify-content: center">-->
+      <!--        <button id="homeButton" class="homeButton">-->
+      <!--          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>-->
+      <!--        </button>-->
+      <!--      </div>-->
+
+      <footer>
+        <div class="ic-footer">
+          <div class="ic-footer-left">
+            <p>© 2021 Insert Coin. All rights reserved</p>
+            <p style="display: flex; justify-content: flex-start; align-items: center;">
+              <button class="telegramButton">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Telegram</title><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              </button>
+              <button class="twitterButton">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+              </button>
+              <button class="discordButton">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+              </button>
+              <button class="instagramButton">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+              </button>
+            </p>
+          </div>
+          <div class="ic-footer-right">
+            <div style="height: fit-content; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+              <div style="height: fit-content; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <!--                <div class="dropdown">-->
+                <!--                  <a class="dropButton-empty homeButton">HOME</a>-->
+                <!--                </div>-->
+                <div class="dropdown">
+                  <a class="dropButton-empty" href=".">HOME</a>
+                </div>
+                <div class="dropdown">
+                  <a class="dropButton-empty" href="#nft">NFT</a>
+                </div>
+              </div>
+              <div style="height: fit-content; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <!--                <div class="dropdown">-->
+                <!--                  <a class="dropButton-empty homeButton">HOME</a>-->
+                <!--                </div>-->
+                <div class="dropdown">
+                  <a class="dropButton-empty" href="#token">TOKEN</a>
+                </div>
+                <div class="dropdown">
+                  <a class="dropButton-empty" href="#faq">FAQS</a>
+                </div>
+              </div>
+              <div style="height: fit-content; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <!--                <div class="dropdown">-->
+                <!--                  <a class="dropButton-empty" href="#faq">FAQS</a>-->
+                <!--                </div>-->
+                <div class="dropdown">
+                  <a class="dropButton-empty" href="#roadmap">ROADMAP</a>
+                </div>
+                <div class="dropdown">
+                  <a class="dropButton-empty" href="#howTo">HOW TO</a>
+                </div>
+              </div>
+            </div>
+            <img src="assets/logo_black_wr.svg" alt="" style="width: 60px;">
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="libs/clipboard.js"></script>
+<script src="app.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZPYBE2CTX2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZPYBE2CTX2');
+</script>
+<!-- End Google Analytics -->
+  </body>
+</html>
