@@ -62,17 +62,18 @@ const interactFunctions = {
     },
     chartButton: function () {
         // window.open("https://www.dextools.io/app/uniswap/pair-explorer/0x465d676bc576eac77f3a69c5454a84294cea5092");
-        alert("Coming soon!");
+        // alert("Coming soon!");
     },
     getCoinButton: function () {
         // window.open("https://app.uniswap.org/#/swap?outputCurrency=0x76851a93977bea9264c32255b6457882035c7501&use=V2");
-        alert("Coming soon!");
+        // alert("Coming soon!");
     },
     getNFTButton: function () {
         // window.open("https://opensea.io/");
     },
     etherescanButton: function () {
-        window.open("https://etherscan.io/address/0x08b088e282cDF720796809514F5E07096c5A8c6f");
+        window.open("https://etherscan.io/address/0xcB00ed46D3e84f144d067eaaFf36c3C064138EC3");
+        // alert("Coming soon!");
     }
 }
 // insertButton.addEventListener("mousedown", interactFunctions.zoomCabin);

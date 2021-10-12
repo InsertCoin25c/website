@@ -99,8 +99,57 @@ p.paragraph{
 }
 
 .countdown {
-  font-size: 8rem!important;
+  font-size: 86px!important;
 }
+
+.openChartButton{
+
+}
+
+.openGetCoinButton{
+
+}
+
+.openChartButton:hover span {
+  display: none;
+}
+
+.openChartButton:hover  {
+  padding: unset!important;
+ }
+
+.openChartButton:hover:before {
+  content: "COMING SOON!";
+}
+
+.openGetCoinButton:hover span {
+  display: none;
+}
+
+.openGetCoinButton:hover  {
+  padding: unset!important;
+}
+
+.openGetCoinButton:hover:before {
+  content: "COMING SOON!";
+  padding: unset!important;
+}
+
+.openEtherScan{
+
+}
+
+/*.openEtherScan:hover span {*/
+/*  display: none;*/
+/*}*/
+
+/*.openEtherScan:hover  {*/
+/*  padding: unset!important;*/
+/*}*/
+
+/*.openEtherScan:hover:before {*/
+/*  content: "COMING SOON!";*/
+/*}*/
 
 /*Stelle*/
 html {
