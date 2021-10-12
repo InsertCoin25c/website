@@ -98,6 +98,10 @@ p.paragraph{
   margin-top: 2rem !important;
 }
 
+.countdown {
+  font-size: 8rem!important;
+}
+
 /*Stelle*/
 html {
   height: 100%;
@@ -1616,5 +1620,8 @@ button{
   }
   .dropdown-content a {
     font-size: 32px;
+  }
+  .countdown {
+    font-size: 60px!important;
   }
 }
