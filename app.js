@@ -69,7 +69,7 @@ const interactFunctions = {
         // alert("Coming soon!");
     },
     getNFTButton: function () {
-        // window.open("https://opensea.io/");
+        window.open("https://opensea.io/");
     },
     etherescanButton: function () {
         window.open("https://etherscan.io/address/0xcB00ed46D3e84f144d067eaaFf36c3C064138EC3");
@@ -144,24 +144,44 @@ clipboard.on('error', function(e) {
 
 try {
     let countdown = document.getElementById("dateCountdown");
+    let availableElement = document.getElementById("availableForAlloween");
 
-    let countDownDate = new Date("Oct 31, 2021 22:00:00").getTime();
+    let countDownDate = new Date("2021-10-31T21:00:00Z").getTime();
+    let stopDate = new Date("2021-11-01T02:00:00Z").getTime();
     let x = setInterval(function() {
         let now = new Date().getTime();
         let distance = countDownDate - now;
+        let distanceForStop = stopDate - now;
         let days = Math.floor(distance / (1000 * 60 * 60 * 24));
         let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demo"
-        countdown.innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
+        countdown.innerHTML = days + "d " + hours + "h " +
+            minutes + "m " + seconds + "s ";
 
         // If the count down is finished, write some text
-        if (distance < 0) {
+        if (distance < 0 && distanceForStop >= 0) {
+            // clearInterval(x);
+            countdown.innerHTML = "Happy HALLOWEEN!";
+            availableElement.remove();
+        } else if (distanceForStop < 0) {
             clearInterval(x);
-            countdown.innerHTML = "EXPIRED";
+            countdown.innerHTML = "";
+            // let rootElement = document.getElementById("root");
+            // rootElement.classList.remove("hide");
+            availableElement.remove();
+            let buttonAnchor = document.getElementById("nft-section-button-anchor");
+            let pButton = document.createElement("p");
+            let getButton = document.createElement("button");
+            pButton.classList.add("style3");
+            pButton.classList.add("ic-section-nft-buttons");
+            getButton.classList.add("simpleButton");
+            getButton.innerText = "GET NFT";
+            getButton.addEventListener("click", interactFunctions.getNFTButton);
+            pButton.appendChild(getButton);
+            buttonAnchor.appendChild(pButton);
         }
     }, 1000);
 } catch (e) {
